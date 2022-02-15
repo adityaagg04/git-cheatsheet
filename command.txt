@@ -3,8 +3,18 @@ git add <filename.extension>= used to add files to staging area (particular file
 git add . = used to add files to staging area (all files)
 git status = used to check status of file whether they are in staging area or not
 git commit = used to commit files to keep track of changes
-git log = keeps track of commits
+git log = shows track of commits
+git log --oneline = shows track of commit in onelinear
 git checkout <commit id> = updates to the given id commit
 git checkout master = updates to the latest commit
 git revert <commit id>= create a new commit of the commit which we passed the id of
 git reset --hard = moves to the commit deleting all the commits made after that
+
+/**BRANCHES**/
+
+git branch <branch-name> = creates a new branch
+git checkout -b <branch-name> = create a new branch and switch to it
+git checkout <branch-name> = switch to branch of which name is specified
+git branch -a = shows all the branches
+git branch -d <branch-name> = deletes the branch of which name is specified
+git merge <branch-name> = merge the current branch with the branch name specified
