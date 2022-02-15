@@ -1,0 +1,3 @@
+git init = used to initialize git
+git add <filename.extension>= used to add files to staging area
+git status = used to check status of file whether they are in staging area or not
