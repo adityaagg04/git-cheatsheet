@@ -4,3 +4,5 @@ git add . = used to add files to staging area (all files)
 git status = used to check status of file whether they are in staging area or not
 git commit = used to commit files to keep track of changes
 git log = keeps track of commits
+git checkout <commit id> = updates to the given id commit
+git checkout master = updates to the latest commit
