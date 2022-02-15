@@ -6,3 +6,5 @@ git commit = used to commit files to keep track of changes
 git log = keeps track of commits
 git checkout <commit id> = updates to the given id commit
 git checkout master = updates to the latest commit
+git revert <commit id>= create a new commit of the commit which we passed the id of
+git reset --hard = moves to the commit deleting all the commits made after that
