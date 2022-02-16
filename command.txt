@@ -1,3 +1,9 @@
+/**GENERAL TERMINAL COMMANDS**/
+cd = change directory (Folder)
+mkdir = make directory
+rm -rf = remove file / directory
+
+/**GIT COMMANDS**/
 git init = used to initialize git
 git add <filename.extension>= used to add files to staging area (particular file)
 git add . = used to add files to staging area (all files)
@@ -23,3 +29,11 @@ git merge <branch-name> = merge the current branch with the branch name specifie
 
 git remote add origin <repository https link> = connects the git repository with the folder in which you are in
 git remote -v = check whether folder is connected to repository or not (if both fetch and push are present, then it is connected)
+git pull = takes all the information and update our local repository
+git pull origin <branch-name> = takes all the info of a specific branch
+git push -u origin <push-branch name> = pushes local repository to remote repository and -u is used to remember it
+git push origin <push-branch name> = pushes local repository to remote repository
+git push = pushes local repository to remote repository if the branch is remembered
+git push origin --delete <branch-name> = deletes branch remotely
+
+
