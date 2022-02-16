@@ -18,3 +18,8 @@ git checkout <branch-name> = switch to branch of which name is specified
 git branch -a = shows all the branches
 git branch -d <branch-name> = deletes the branch of which name is specified
 git merge <branch-name> = merge the current branch with the branch name specified
+
+/**CONNECT GIT REMOTELY**/
+
+git remote add origin <repository https link> = connects the git repository with the folder in which you are in
+git remote -v = check whether folder is connected to repository or not (if both fetch and push are present, then it is connected)
