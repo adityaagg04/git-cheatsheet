@@ -1,6 +1,7 @@
 /**GENERAL TERMINAL COMMANDS**/
 cd = change directory (Folder)
 mkdir = make directory
+touch = create a new file
 rm -rf = remove file / directory
 ls = display the list of folders and file of directory in which we are present
 
