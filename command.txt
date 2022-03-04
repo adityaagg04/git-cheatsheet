@@ -7,8 +7,12 @@ ls = display the list of folders and file of directory in which we are present
 
 /**GIT COMMANDS**/
 git init = used to initialize git
+git config --global user.email "our email" : used to provide author's identity (email)
+git config --global user.name "our name" : used to provide author's identity (name)
+git diff <file_name> : check for the differences using command line
 git add <filename.extension>= used to add files to staging area (particular file)
 git add . = used to add files to staging area (all files)
+git add -p <file-name> : adding a single file to staging area paragraph by paragraph
 git status = used to check status of file whether they are in staging area or not
 git commit = used to commit files to keep track of changes
 git log = shows track of commits
