@@ -9,20 +9,21 @@ ls = display the list of folders and file of directory in which we are present
 git init = used to initialize git
 git config --global user.email "our email" : used to provide author's identity (email)
 git config --global user.name "our name" : used to provide author's identity (name)
-git diff <file_name> : check for the differences using command line
+git diff <file-name> : check for the differences using command line
 git add <filename.extension>= used to add files to staging area (particular file)
 git add . = used to add files to staging area (all files)
 git add -p <file-name> : adding a single file to staging area paragraph by paragraph
 git status = used to check status of file whether they are in staging area or not
-git commit = used to commit files to keep track of changes
+git commit -m " MESSAGE " = used to commit files to keep track of changes with a message
+git commit --amend -m "	MESSAGE " = used to change the message of the most recent commmit
 git log = shows track of commits
 git log --oneline = shows track of commit in onelinear
-git checkout <commit id> = updates to the given id commit (files remain committed)
+git checkout <commit-id> = updates to the given id commit (files remain committed)
 git checkout master = updates to the latest commit
-git revert <commit id>= create a new commit of the commit which we passed the id of
-git reset --soft <commit id> = moves back to staging area of the commit (like a redo to name of the commit)
-git reset --mixed <commit id>= moves to the working directory (files are not committed)
-git reset --hard <commit id>= moves to the commit deleting all the commits made after that
+git revert <commit-id>= create a new commit of the commit which we passed the id of
+git reset --soft <commit-id> = moves back to staging area of the commit (like a redo to name of the commit)
+git reset --mixed <commit-id>= moves to the working directory (files are not committed)
+git reset --hard <commit-id>= moves to the commit deleting all the commits made after that
 
 /**BRANCHES**/
 
@@ -32,6 +33,7 @@ git checkout <branch-name> = switch to branch of which name is specified
 git branch -a = shows all the branches
 git branch -d <branch-name> = deletes the branch of which name is specified
 git merge <branch-name> = merge the current branch with the branch name specified
+git merge --abort = undo the merging of branches (generally used when merge conflicts happens)
 
 /**CONNECT GIT REMOTELY**/
 
@@ -39,9 +41,18 @@ git remote add origin <repository https link> = connects the git repository with
 git remote -v = check whether folder is connected to repository or not (if both fetch and push are present, then it is connected)
 git pull = takes all the information and update our local repository if branch name is remembered
 git pull origin <branch-name> = takes all the info of a specific branch
-git push -u origin <push-branch name> = pushes local repository to remote repository and -u is used to remember it
-git push origin <push-branch name> = pushes local repository to remote repository
+git push -u origin <push-branch-name> = pushes local repository to remote repository and -u is used to remember it
+git push origin <push-branch-name> = pushes local repository to remote repository
 git push = pushes local repository to remote repository if the branch is remembered
 git push origin --delete <branch-name> = deletes branch remotely
 
+/**ADVANCE GIT COMMANDS**/
 
+git rebase -i HEAD~<count til the parent of the commit where action has to be taken> : popup window will appear where you can select the command and perform the action {example -> squash " Message " : will combine the commit with its next commit}
+git cherry-pick <commit-id> : picks the commit whose id is mentioned and places it in the present branch
+git reflog : used to check the movement of the head pointer and every movement has its hash id
+git log --after="date" : check for the commits after the given date
+git log --before="date" : check for the commits before the given date
+git log --after="date" --before="date" : check for the commits done between the given time period
+git log --grep="term" : search for the term or a or the regular expression in the commits earlier done commits
+git log -- <file-name> : search for commits done for the file
