@@ -1,5 +1,6 @@
 /**GENERAL TERMINAL COMMANDS**/
 cd = change directory (Folder)
+cd .. = go one step back in directories`
 mkdir = make directory
 touch = create a new file
 rm -rf = remove file / directory
